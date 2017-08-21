@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/d1"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/d2"/>
+
+        <item
+            android:id="@+id/nav_back"
+            android:icon="@drawable/ksuksu"
+            android:title="@string/d3"/>
+
+
+    </group>
+
+    <item android:title="Post-processing">
+        <menu>
+            <item
+                android:id="@+id/nav_save"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Save" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_results"
+                android:icon="@drawable/ic_launcher_res"
+                android:title="About" />
+        </menu>
+    </item>
+
+</menu>

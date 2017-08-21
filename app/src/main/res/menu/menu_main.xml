@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.app.watershed.MainActivity">
+    <group android:checkableBehavior = "single">
+
+        <item android:id= "@+id/i1"
+            android:orderInCategory="3"
+            app:showAsAction = "never"
+            android:title="@string/i1"/>
+
+        <item android:id= "@+id/i2"
+            android:orderInCategory="4"
+            app:showAsAction = "never"
+            android:title="@string/i2"/>
+
+        <item android:id="@+id/i3"
+            android:orderInCategory="5"
+            app:showAsAction = "never"
+            android:title="@string/i3"/>
+
+        <item android:id="@+id/i4"
+            android:orderInCategory="2"
+            app:showAsAction = "never"
+            android:title="@string/i4"/>
+
+
+        <item android:id="@+id/i5"
+            android:orderInCategory="1"
+            app:showAsAction = "never"
+            android:title="@string/i5"/>
+
+        <item android:id="@+id/i6"
+            android:orderInCategory="6"
+            app:showAsAction = "never"
+            android:title="@string/i6"/>
+
+
+
+    </group>
+</menu>

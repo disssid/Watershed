@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/sid/Downloads/Watershed2/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="/home/sid/Downloads/Watershed2/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_63b9560b604136506358c65c1e86afd4257646ef/classes.dex" />
+    </item>
+    <item
+        jar="/home/sid/Downloads/Watershed2/app/build/intermediates/exploded-aar/Watershed2/openCVLibrary310/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="90d9ab1108936f572583aeb760028ba714e31ca1">
+        <dex dex="/home/sid/Downloads/Watershed2/app/build/intermediates/transforms/dex/debug/folders/1000/4/Watershed2-openCVLibrary310-unspecified_84661e5e2632a10c75738c110f410a47c0d3c5af/classes.dex" />
+    </item>
+    <item
+        jar="/home/sid/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="/home/sid/Downloads/Watershed2/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.1_0f17cd96df06e54a6ca96eeb7361890f6a2fe6f7/classes.dex" />
+    </item>
+    <item
+        jar="/home/sid/Downloads/Watershed2/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="/home/sid/Downloads/Watershed2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.1.1_59c7666a7925636a75eac25754c3239236014a5e/classes.dex" />
+    </item>
+    <item
+        jar="/home/sid/Downloads/Watershed2/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="/home/sid/Downloads/Watershed2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.1.1_dd9b4d19a8e5d42def03a8def47783b02f2be4cc/classes.dex" />
+    </item>
+    <item
+        jar="/home/sid/Downloads/Watershed2/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="787871951412550519b0222aba3c9df4cea49875">
+        <dex dex="/home/sid/Downloads/Watershed2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.1.1_3b1734aef4e4c497d1dbc638d03c725bc5724d80/classes.dex" />
+    </item>
+    <item
+        jar="/home/sid/Downloads/Watershed2/app/build/intermediates/exploded-aar/com.soundcloud.android/android-crop/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="11a65cf2b30c192b38a881d626fa771a78a2293d">
+        <dex dex="/home/sid/Downloads/Watershed2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.soundcloud.android-android-crop-1.0.1_7c480c0c71e7aefc74f6d0470420a5ee3f5a8845/classes.dex" />
+    </item>
+    <item
+        jar="/home/sid/Downloads/Watershed2/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="/home/sid/Downloads/Watershed2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.1.1_9164ec69287bef22ed562c3a8f7997f144db284e/classes.dex" />
+    </item>
+    <item
+        jar="/home/sid/Downloads/Watershed2/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="/home/sid/Downloads/Watershed2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.1.1_ac9c32611a24d6d8355cf7f27ce372b528e74671/classes.dex" />
+    </item>
+    <item
+        jar="/home/sid/Downloads/Watershed2/app/build/intermediates/exploded-aar/com.android.support/design/24.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
+        <dex dex="/home/sid/Downloads/Watershed2/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.1.1_b7cde7c075ad9317c8998037995faedaba81f853/classes.dex" />
+    </item>
+
+</items>
