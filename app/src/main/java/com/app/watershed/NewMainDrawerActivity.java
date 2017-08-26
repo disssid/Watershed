@@ -1,7 +1,9 @@
 package com.app.watershed;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -415,7 +417,7 @@ public class NewMainDrawerActivity extends AppCompatActivity
             }
             else
             {
-                w.setHue(h1, h2);
+                    w.setHue(h1, h2);
             }
             w.checkMultiHue(multiHueRange);
             Bitmap bitmap1 = w.process();
@@ -440,24 +442,47 @@ public class NewMainDrawerActivity extends AppCompatActivity
 
     }
 
-    public void hueDialog(){
+    //Functionality - Dialog for user input to select a single Hue range
+    //Description :
+    //  The dialog shows two seek bars for the user to select a hue range
+    //      1. The first seek bar is the starting range and ranges between 0-180
+    //      2. The second seek bar is the ending range, it should be greater than the starting range and ranges between 0-180
+
+    public void hueDialog(int hueValue1, int hueValue2){
         final AlertDialog.Builder dialg= new AlertDialog.Builder(this);
         final LayoutInflater inflater = (LayoutInflater)this.getSystemService(LAYOUT_INFLATER_SERVICE);
         final View viewLayout = inflater.inflate(R.layout.hue_layout, (ViewGroup)findViewById(R.id.hue_dialog));
         final TextView tv1 = (TextView)viewLayout.findViewById(R.id.textView4);
         final TextView tv2 = (TextView)viewLayout.findViewById(R.id.textView5);
+        final TextView tvHueStatus = (TextView)viewLayout.findViewById(R.id.textView10);
+
+        tv1.setText("Starting range value is : " + hueValue1);
+        tv2.setText("Ending range value is : " + hueValue2);
+        tvHueStatus.setText("");
+
+        if(hueValue1 != 0 && hueValue2 != 0)
+            tvHueStatus.setText("Starting hue range cannot be greater than ending rang");
         //dialg.setIcon(android.R.drawable.sym_def_app_icon);
         dialg.setTitle("Select the Hue ranges!");
         // dialg.setView(viewLayout);
         dialg.setView(viewLayout);
         SeekBar seek1 = (SeekBar)viewLayout.findViewById(R.id.seekBar2);
         seek1.setMax(180);
-
+        seek1.setProgress(h1);
         seek1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 h1 = i;
-                tv1.setText("Starting range is: "+ i);
+                if(h1 > h2) {
+                    tvHueStatus.setText("Starting range cannot be greater than ending range");
+                    tv1.setText("Starting Range value is : "+ h1);
+                    tv2.setText("Ending range value is : " + h2);
+                }
+                else {
+                    tv1.setText("Starting range value is: " + i);
+                    tv2.setText("Ending range value is : " + h2);
+                    tvHueStatus.setText("");
+                }
             }
 
             @Override
@@ -473,11 +498,21 @@ public class NewMainDrawerActivity extends AppCompatActivity
 
         SeekBar seek2 = (SeekBar)viewLayout.findViewById(R.id.seekBar3);
         seek2.setMax(180);
+        seek2.setProgress(h2);
         seek2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 h2 = i;
-                tv2.setText("Ending range value is: "+ i);
+                if(h2 < h1) {
+                    tv1.setText("Starting range value is :" + h1);
+                    tv2.setText("Ending range value is : " +h2);
+                    tvHueStatus.setText("Ending range cannot be less than starting range");
+                }
+                else {
+                    tv1.setText("Starting range value is :" + h1);
+                    tv2.setText("Ending range value is: " + h2);
+                    tvHueStatus.setText("");
+                }
             }
 
             @Override
@@ -492,24 +527,30 @@ public class NewMainDrawerActivity extends AppCompatActivity
         });
 
 
-
+        b.setEnabled(false);
         dialg.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                String name = "";
-                if((h1==0) && (h2==50)){
-                    name = "Wheat";
+                if(h1 > h2) {
+                    dialogInterface.dismiss();
+                    hueDialog(h1, h2);
                 }
                 else{
-                    name = "Default";
+                    String name = "";
+                    if ((h1 == 0) && (h2 == 50)) {
+                        name = "Wheat";
+                    } else {
+                        name = "Default";
+                    }
+                    dialogInterface.cancel();
+                    String hueString = h1 + "," + h2;
+                    print("name is " + name + " and hue is " + hueString);
+                    myDB.insertData(name, hueString);
+                    toast("Selected range is: " + h1 + " to " + h2);
+                    multiHueRange = false;
+                    showDialog();
+                    dialogInterface.dismiss();
                 }
-                String hueString = h1+","+h2;
-                print("name is "+name+" and hue is "+hueString);
-                myDB.insertData(name, hueString);
-                toast("Selected range is: "+h1+" to "+h2);
-                multiHueRange = false;
-                showDialog();
-                dialogInterface.dismiss();
             }
         });
 
@@ -811,6 +852,13 @@ public class NewMainDrawerActivity extends AppCompatActivity
         dialg.show();
     }
 
+    //Functionality - Dialog for user input to select Hue ranges
+    //Description :
+    //  The dialog shows three options for the user to select multiple hue ranges, specify a range and view older inputs
+    //      1. On selecting "Ok" a list of predefined multiple hue ranges is displayed for the user to select
+    //      2. On selecting "Cancel" the user is presented with a dialog to select a range for starting and ending (starting < ending)
+    //      3. On selecting "Recent Inputs" the user is presented with a list of previous hue ranges selected
+
     public void huefeedbackDialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setMessage("Do you have multiple hue ranges to select?")
@@ -825,9 +873,8 @@ public class NewMainDrawerActivity extends AppCompatActivity
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                       hueDialog();
+                       hueDialog(0,0);
                         dialogInterface.cancel();
-
                     }
                 })
                 .setNeutralButton("Select from list", new DialogInterface.OnClickListener() {
