@@ -3,75 +3,102 @@
 
     <item
         is-multidex="true"
-        jar="/home/sid/.android/build-cache/d6508437c5b47d6b3d2599974cfa7f351d65f3d9/output/jars/classes.jar"
+        jar="/home/sid/.android/build-cache/ebf1dc0a41df6bcfdf3321aa6526e43de8c1a8e8/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
-        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1080026d55f09a66619a5f9c761797c8d1527f3a/classes.dex" />
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b6897e3472a092f896e131c96962434b4cc66be9/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/sid/.android/build-cache/aba6ab61594ef160ec41ed089a0408befdbd2175/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
-        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bfacd9132deff3ac14c4b6b19908ce24e3fdde55/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/sid/.android/build-cache/f1da396cd6becf06aa12d4896f76ddb1782ace3d/output/jars/classes.jar"
+        jar="/home/sid/.android/build-cache/35db5287b2eae12d5a06c2e6bcdec15d13d55a86/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="6d7d803871e3203465f71a163e7af104f807b446">
-        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bce284ff075d0c7be9615fe50fbdb6dc253fe02f/classes.dex" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ac9ed57736f18095372b1d95e6d68194bbe6e9b4/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/sid/.android/build-cache/41e8686644028c870b26f2a102b83f65fac9b87b/output/jars/classes.jar"
+        jar="/home/sid/.android/build-cache/ebf1dc0a41df6bcfdf3321aa6526e43de8c1a8e8/output/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="f62e763609f65e47dc6c498760a4accf02776788">
-        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c01dee59b2ac5ae9cb5a84346eec5262bd0b83da/classes.dex" />
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_0661f6c99e9c3b66792961904f62d5fe9caa454c/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/sid/.android/build-cache/d6508437c5b47d6b3d2599974cfa7f351d65f3d9/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
-        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1080026d55f09a66619a5f9c761797c8d1527f3a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/sid/.android/build-cache/138650c353577b51b24ff39e7fde5cc26c413682/output/jars/classes.jar"
+        jar="/home/sid/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
-        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8e0e0a76b64bc49fadcf4819b9c010a129d1b485/classes.dex" />
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_c9ca7025770012ad7034bc33e13a160cb881af38/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/sid/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
-        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.1_0f17cd96df06e54a6ca96eeb7361890f6a2fe6f7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/sid/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
+        jar="/home/sid/.android/build-cache/34e27cca777362fcda3983a3c0ccb80b54458a52/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
-        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.1.1_0f17cd96df06e54a6ca96eeb7361890f6a2fe6f7/classes.dex" />
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d2d1ae5a387164307fae46c793aec9c3f1524589/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sid/.android/build-cache/8723f80d30b0d111a1cb3ec4657a30c2c7fdf27d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3e07c885012e5db0fd8f0d349c1986679797545f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sid/.android/build-cache/048aaf15eb8dca8bcb286d127c8276bb4ee1426d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ff0b0ef9778f5520534de716eb25b37a88af6388/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sid/.android/build-cache/347b5d10477a5e11ba03c2cfa7b5aca43ce31419/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_79d98fe3658171a75c7a98343c34f3e086e370a6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sid/.android/build-cache/97808be38394f172ae94357c48feccdb020162e2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5eb2b938a474c54fdcbafba592c93635d3ad3b6d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sid/.android/build-cache/97808be38394f172ae94357c48feccdb020162e2/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_3339e0b2084a145b4e926a518bbb502842dd6d0c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sid/.android/build-cache/7b9280055f0df5cb817471d58321b49722198175/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_399310f4acbc0d8ad6c8337854ef1327ca1c1b29/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -84,30 +111,30 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/sid/.android/build-cache/138650c353577b51b24ff39e7fde5cc26c413682/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
-        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8e0e0a76b64bc49fadcf4819b9c010a129d1b485/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/sid/.android/build-cache/2350827a28383b6fa2de93aa8eb145d3068e90b4/output/jars/classes.jar"
+        jar="/home/sid/.android/build-cache/234168b845275192c17c424d6e9f5c69fc5af98a/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="787871951412550519b0222aba3c9df4cea49875">
-        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_744ff6f1fa1a66be5dfaeb01997d9dfc7cceace5/classes.dex" />
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_730258968f712c79cbec242d52709460584d49a5/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/sid/.android/build-cache/41e8686644028c870b26f2a102b83f65fac9b87b/output/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/sid/.android/build-cache/347b5d10477a5e11ba03c2cfa7b5aca43ce31419/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="f62e763609f65e47dc6c498760a4accf02776788">
-        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c01dee59b2ac5ae9cb5a84346eec5262bd0b83da/classes.dex" />
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_92aecff456c8f522dfa644a510c121f860462e5c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/sid/.android/build-cache/11fe1fd91432a0816606e6b1e8c72ea7a33db2b5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="28d4a4aeb040c9a0fd6eb31b9e0af8bdf6619d5c">
+        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f55a52e534116ffca963c9672704389b2d8bc565/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -115,71 +142,53 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="4ae86b650ce1eadfde9482a7ba33e80413cd003c">
+        sha1="fc4915e365ca7028586272707265409b8a02ca78">
         <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_974c0dec4d840aff9ff3c460960510a80365fb34/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/sid/.android/build-cache/f1da396cd6becf06aa12d4896f76ddb1782ace3d/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6d7d803871e3203465f71a163e7af104f807b446">
-        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bce284ff075d0c7be9615fe50fbdb6dc253fe02f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/sid/.android/build-cache/aba6ab61594ef160ec41ed089a0408befdbd2175/output/jars/classes.jar"
+        jar="/home/sid/.android/build-cache/ac1a7bbf4e4d1955cdfb3d76a06184e376c90443/output/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
-        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bfacd9132deff3ac14c4b6b19908ce24e3fdde55/classes.dex" />
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_c9feec36263aa15cbaaf6099b94ad312ce3fa922/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/sid/.android/build-cache/f1da396cd6becf06aa12d4896f76ddb1782ace3d/output/jars/libs/internal_impl-24.1.1.jar"
+        jar="/home/sid/.android/build-cache/60d11ca944b87939e03fb093ccf772c0827e280d/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
-        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_e0aa9a73669ae49c2014a4fd0f6b2f9a0b2300b0/classes.dex" />
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_651f786b968d20a24307f006b7863d61513962b3/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/sid/.android/build-cache/b6fdeaa86b33e699d10c13317f7db72083b3ca30/output/jars/classes.jar"
+        jar="/home/sid/.android/build-cache/ac1a7bbf4e4d1955cdfb3d76a06184e376c90443/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="11a65cf2b30c192b38a881d626fa771a78a2293d">
-        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6e8b59dec717d3ffd2517c8959130c0bf3b498c4/classes.dex" />
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_55c51fe265d5d62cac4bf4739a403d4f78cce84c/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/sid/.android/build-cache/2350827a28383b6fa2de93aa8eb145d3068e90b4/output/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/sid/.android/build-cache/048aaf15eb8dca8bcb286d127c8276bb4ee1426d/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="787871951412550519b0222aba3c9df4cea49875">
-        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_744ff6f1fa1a66be5dfaeb01997d9dfc7cceace5/classes.dex" />
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_6931ddcee72556a421d22c8dfae6a1bb414cdcf0/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/sid/.android/build-cache/f1da396cd6becf06aa12d4896f76ddb1782ace3d/output/jars/libs/internal_impl-24.1.1.jar"
-        jumboMode="false"
+        jar="/home/sid/.android/build-cache/f7180828b036127ee4bd79720593ab7aed3b6d1f/output/jars/classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
-        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.1.1_e0aa9a73669ae49c2014a4fd0f6b2f9a0b2300b0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/sid/.android/build-cache/b6fdeaa86b33e699d10c13317f7db72083b3ca30/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="11a65cf2b30c192b38a881d626fa771a78a2293d">
-        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6e8b59dec717d3ffd2517c8959130c0bf3b498c4/classes.dex" />
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/home/sid/AndroidStudioProjects/Watershed/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1170942bf250e7505eb1f2b3e3a51fc712854ef2/classes.dex" />
     </item>
 
 </items>

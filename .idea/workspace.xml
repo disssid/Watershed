@@ -38,33 +38,213 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be219d92-4dfe-4cca-9f5a-39976d231966" name="Default" comment="Implemented pre-defined list of seeds wrapped in the alert dialog. Need to implement SQLite database for saving user's inputs.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/outputs/aar/openCVLibrary310-debug.aar" afterPath="$PROJECT_DIR$/openCVLibrary310/build/outputs/aar/openCVLibrary310-debug.aar" />
+    <list default="true" id="be219d92-4dfe-4cca-9f5a-39976d231966" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_25_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_25_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/design_25_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/multislider_1_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_25_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_25_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_compat_25_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_ui_25_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_utils_25_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_fragment_25_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_media_compat_25_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_25_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_25_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/transition_25_0_1.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_24_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_24_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/design_24_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_24_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_24_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_24_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_24_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/generated/mockable-android-24.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/generated/source/aidl/debug/org/opencv/engine/OpenCVEngineInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/generated/source/buildConfig/androidTest/debug/org/opencv/test/BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/generated/source/buildConfig/debug/org/opencv/BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/generated/source/r/androidTest/debug/org/opencv/R.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/generated/source/r/androidTest/debug/org/opencv/test/R.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/generated/source/r/debug/org/opencv/R.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/blame/res/androidTest/debug/multi/values.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/debug/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/debug/R.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/debug/aapt/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/debug/classes.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/debug/res/values/values.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/release/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/release/R.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/release/aapt/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/release/classes.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/release/res/values/values.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/androidTest/debug/org/opencv/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/androidTest/debug/org/opencv/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/androidTest/debug/org/opencv/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/androidTest/debug/org/opencv/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/androidTest/debug/org/opencv/test/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/androidTest/debug/org/opencv/test/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/androidTest/debug/org/opencv/test/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/androidTest/debug/org/opencv/test/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/androidTest/debug/org/opencv/test/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$3$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/AsyncServiceHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/BaseLoaderCallback.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/Camera2Renderer$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/Camera2Renderer$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/Camera2Renderer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase$CvCameraViewFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase$CvCameraViewListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase$CvCameraViewListener2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase$CvCameraViewListenerAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase$ListItemAccessor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraBridgeViewBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraGLRendererBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraGLSurfaceView$CameraTextureListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraGLSurfaceView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/CameraRenderer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/FpsMeter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/InstallCallbackInterface.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/JavaCameraView$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/JavaCameraView$CameraWorker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/JavaCameraView$JavaCameraFrame.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/JavaCameraView$JavaCameraSizeAccessor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/JavaCameraView.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/LoaderCallbackInterface.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/OpenCVLoader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/StaticHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/android/Utils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/calib3d/Calib3d.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/calib3d/StereoBM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/calib3d/StereoMatcher.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/calib3d/StereoSGBM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/Algorithm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/Core$MinMaxLocResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/Core.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/CvException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/CvType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/DMatch.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/KeyPoint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/Mat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfByte.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfDMatch.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfDouble.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfFloat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfFloat4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfFloat6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfInt.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfInt4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfKeyPoint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfPoint.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfPoint2f.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfPoint3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfPoint3f.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/MatOfRect.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/Point.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/Point3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/Range.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/Rect.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/RotatedRect.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/Scalar.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/Size.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/core/TermCriteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/engine/OpenCVEngineInterface$Stub$Proxy.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/engine/OpenCVEngineInterface$Stub.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/engine/OpenCVEngineInterface.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/features2d/DescriptorExtractor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/features2d/DescriptorMatcher.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/features2d/FeatureDetector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/features2d/Features2d.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/imgcodecs/Imgcodecs.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/imgproc/CLAHE.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/imgproc/Imgproc.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/imgproc/LineSegmentDetector.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/imgproc/Moments.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/imgproc/Subdiv2D.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/ml/ANN_MLP.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/ml/Boost.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/ml/DTrees.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/ml/EM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/ml/KNearest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/ml/LogisticRegression.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/ml/Ml.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/ml/NormalBayesClassifier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/ml/RTrees.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/ml/SVM.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/ml/StatModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/ml/TrainData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/objdetect/BaseCascadeClassifier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/objdetect/CascadeClassifier.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/objdetect/HOGDescriptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/objdetect/Objdetect.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/photo/AlignExposures.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/photo/AlignMTB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/photo/CalibrateCRF.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/photo/CalibrateDebevec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/photo/CalibrateRobertson.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/photo/MergeDebevec.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/photo/MergeExposures.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/photo/MergeMertens.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/photo/MergeRobertson.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/photo/Photo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/photo/Tonemap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/photo/TonemapDrago.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/photo/TonemapDurand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/photo/TonemapMantiuk.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/photo/TonemapReinhard.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/utils/Converters.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/video/BackgroundSubtractor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/video/BackgroundSubtractorKNN.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/video/BackgroundSubtractorMOG2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/video/DenseOpticalFlow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/video/DualTVL1OpticalFlow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/video/KalmanFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/video/Video.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/videoio/VideoCapture.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/videoio/VideoWriter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/classes/debug/org/opencv/videoio/Videoio.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental-safeguard/androidTest/debug/tag.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental-safeguard/debug/tag.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/compileDebugAidl/dependency.store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/compileDebugAndroidTestAidl/dependency.store" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugAndroidTestAssets/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugAndroidTestShaders/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/packageDebugResources/merger.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/res/merged/androidTest/debug/values/values.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/symbols/androidTest/debug/R.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/openCVLibrary310/build/outputs/aar/openCVLibrary310-debug.aar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/outputs/aar/openCVLibrary310-release.aar" afterPath="$PROJECT_DIR$/openCVLibrary310/build/outputs/aar/openCVLibrary310-release.aar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/android_crop_1_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/android_crop_1_0_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/app/watershed/NewMainDrawerActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/app/watershed/NewMainDrawerActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/hue_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/hue_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build.gradle" afterPath="$PROJECT_DIR$/openCVLibrary310/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/generated/source/r/androidTest/debug/org/opencv/R.java" afterPath="$PROJECT_DIR$/openCVLibrary310/build/generated/source/r/androidTest/debug/org/opencv/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/blame/res/androidTest/debug/multi/values.json" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/blame/res/androidTest/debug/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/debug/res/values/values.xml" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/bundles/debug/res/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/packageDebugResources/merger.xml" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/packageDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/packageReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/incremental/packageReleaseResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/res/merged/androidTest/debug/values/values.xml" afterPath="$PROJECT_DIR$/openCVLibrary310/build/intermediates/res/merged/androidTest/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/openCVLibrary310/openCVLibrary310.iml" afterPath="$PROJECT_DIR$/openCVLibrary310/openCVLibrary310.iml" />
     </list>
     <ignored path="Watershed.iws" />
@@ -102,8 +282,30 @@
       <file leaf-file-name="NewMainDrawerActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/watershed/NewMainDrawerActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="500" column="30" selection-start-line="500" selection-start-column="30" selection-end-line="500" selection-end-column="30" />
+            <state relative-caret-position="450">
+              <caret line="490" column="0" selection-start-line="490" selection-start-column="0" selection-end-line="490" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -111,12 +313,12 @@
       </file>
       <file leaf-file-name="hue_layout.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/hue_layout.xml">
-          <provider selected="true" editor-type-id="android-designer2">
+          <provider editor-type-id="android-designer2">
             <state />
           </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="684">
+              <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -140,6 +342,11 @@
     <option name="KEY_ALIAS" value="Arunachala" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Siddharth Amaravadi &lt;22083404+disssid@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -196,8 +403,18 @@
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-v4:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportV42501Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="packageReleaseResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:transition:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportTransition2501Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -257,11 +474,6 @@
                 <option name="name" value="mockableAndroidJar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-v4:24.1.1" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportSupportV42411Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays the tasks runnable from root project 'Watershed' (some of the displayed tasks may belong to subprojects)." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
@@ -269,11 +481,6 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="compileDebugSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:design:24.1.1" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportDesign2411Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Initializes a new Gradle build. [incubating]" />
@@ -417,6 +624,11 @@
                 <option name="name" value="javaPreCompileDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-core-ui:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportCoreUi2501Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Uninstalls the Release build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="uninstallRelease" />
@@ -458,6 +670,11 @@
                 <option name="name" value="javaPreCompileDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare io.apptik.widget:multislider:1.3" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareIoApptikWidgetMultislider13Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="packageDebugResources" />
               </ExternalTaskPojo>
@@ -468,6 +685,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="compileDebugAndroidTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-vector-drawable:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportVectorDrawable2501Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -489,6 +711,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="mergeDebugAndroidTestAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-media-compat:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportMediaCompat2501Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -552,13 +779,13 @@
                 <option name="name" value="javaPreCompileReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:recyclerview-v7:24.1.1" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportRecyclerviewV72411Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="javaPreCompileRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:design:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportDesign2501Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all device checks on currently connected devices." />
@@ -587,6 +814,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="processDebugAndroidTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:animated-vector-drawable:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportAnimatedVectorDrawable2501Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -628,6 +860,16 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="mergeReleaseShaders" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:recyclerview-v7:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportRecyclerviewV72501Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-core-utils:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportCoreUtils2501Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the Android dependencies of the project." />
@@ -683,6 +925,11 @@
                 <option name="name" value="compileReleaseJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-compat:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportCompat2501Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="jarReleaseClasses" />
               </ExternalTaskPojo>
@@ -729,11 +976,6 @@
                 <option name="name" value="javaPreCompileDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:animated-vector-drawable:24.1.1" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportAnimatedVectorDrawable2411Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for the debug build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="testDebugUnitTest" />
@@ -763,11 +1005,6 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="transformResourcesWithMergeJavaResForRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-vector-drawable:24.1.1" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportSupportVectorDrawable2411Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -852,11 +1089,6 @@
                 <option name="name" value="generateReleaseBuildConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:appcompat-v7:24.1.1" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportAppcompatV72411Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prepareDebugUnitTestDependencies" />
               </ExternalTaskPojo>
@@ -900,6 +1132,11 @@
                 <option name="name" value="generateDebugBuildConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:appcompat-v7:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportAppcompatV72501Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="build" />
@@ -930,6 +1167,11 @@
                 <option name="name" value="generateReleaseResValues" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-fragment:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportFragment2501Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of root project 'Watershed'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
@@ -944,6 +1186,16 @@
                 <option name="description" value="Displays the sub-projects of project ':app'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-v4:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComAndroidSupportSupportV42501Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:transition:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComAndroidSupportTransition2501Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -985,11 +1237,6 @@
                 <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-v4:24.1.1" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareComAndroidSupportSupportV42411Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Displays the tasks runnable from project ':app'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="tasks" />
@@ -997,11 +1244,6 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileDebugSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:design:24.1.1" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareComAndroidSupportDesign2411Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -1128,6 +1370,11 @@
                 <option name="name" value="javaPreCompileDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-core-ui:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComAndroidSupportSupportCoreUi2501Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Uninstalls the Release build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="uninstallRelease" />
@@ -1161,8 +1408,18 @@
                 <option name="name" value="javaPreCompileDebugUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare io.apptik.widget:multislider:1.3" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareIoApptikWidgetMultislider13Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileDebugAndroidTestSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-vector-drawable:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComAndroidSupportSupportVectorDrawable2501Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -1184,6 +1441,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="mergeDebugAndroidTestAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-media-compat:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComAndroidSupportSupportMediaCompat2501Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -1247,13 +1509,13 @@
                 <option name="name" value="javaPreCompileReleaseUnitTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:recyclerview-v7:24.1.1" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareComAndroidSupportRecyclerviewV72411Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="javaPreCompileRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:design:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComAndroidSupportDesign2501Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Runs all device checks on currently connected devices." />
@@ -1282,6 +1544,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="processDebugAndroidTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:animated-vector-drawable:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComAndroidSupportAnimatedVectorDrawable2501Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -1318,6 +1585,16 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="mergeReleaseShaders" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:recyclerview-v7:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComAndroidSupportRecyclerviewV72501Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-core-utils:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComAndroidSupportSupportCoreUtils2501Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the Android dependencies of the project." />
@@ -1369,6 +1646,11 @@
                 <option name="name" value="compileReleaseJavaWithJavac" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-compat:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComAndroidSupportSupportCompat2501Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="jarReleaseClasses" />
               </ExternalTaskPojo>
@@ -1415,11 +1697,6 @@
                 <option name="name" value="javaPreCompileDebug" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:animated-vector-drawable:24.1.1" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareComAndroidSupportAnimatedVectorDrawable2411Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="description" value="Run unit tests for the debug build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="testDebugUnitTest" />
@@ -1449,11 +1726,6 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="transformResourcesWithMergeJavaResForRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-vector-drawable:24.1.1" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareComAndroidSupportSupportVectorDrawable2411Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -1534,11 +1806,6 @@
                 <option name="name" value="generateReleaseBuildConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:appcompat-v7:24.1.1" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareComAndroidSupportAppcompatV72411Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="prepareDebugUnitTestDependencies" />
               </ExternalTaskPojo>
@@ -1583,6 +1850,11 @@
                 <option name="name" value="generateDebugBuildConfig" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:appcompat-v7:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComAndroidSupportAppcompatV72501Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="build" />
@@ -1611,6 +1883,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateReleaseResValues" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-fragment:25.0.1" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComAndroidSupportSupportFragment2501Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Displays the properties of project ':app'." />
@@ -2278,7 +2555,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="5980835678309" />
+        <entry key="$PROJECT_DIR$" value="5981377142970" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2619,7 +2896,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/content_new_main_drawer.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_fragment__touch_image_view.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/multiplehue.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/multiplehue_dialog.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_new_main_drawer_drawer.xml" />
@@ -2634,16 +2910,17 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/shravan/watershed/NewMainDrawerActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/app/shravan/watershed/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/app/watershed/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/hue_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/app/watershed/NewMainDrawerActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
+    <option name="x" value="1665" />
     <option name="y" value="24" />
-    <option name="width" value="1535" />
-    <option name="height" value="876" />
+    <option name="width" value="1855" />
+    <option name="height" value="1176" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -2689,7 +2966,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2697,37 +2973,15 @@
               <option name="myItemId" value="Watershed" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Watershed" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Watershed" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2742,9 +2996,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2778,6 +3030,9 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
       </pane>
       <pane id="Scratches" />
     </panes>
@@ -3367,7 +3622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497212809558</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="added a check on the lower and upper bounds of hue ranges, plus comments">
+      <created>1503722011595</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1503722011595</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -3380,7 +3642,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1535" height="876" extended-state="6" />
+    <frame x="1665" y="24" width="1855" height="1176" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295238" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -3390,20 +3652,20 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3088737" sideWeight="0.5385779" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45066667" sideWeight="0.4614221" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47142857" sideWeight="0.49092284" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47066668" sideWeight="0.49092284" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3139932" sideWeight="0.5453858" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17461383" sideWeight="0.6001965" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328" sideWeight="0.49092284" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14372581" sideWeight="0.6001965" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294753" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27733332" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18070363" sideWeight="0.39980355" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.276" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -3412,7 +3674,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993174" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328" sideWeight="0.49092284" order="7" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -3492,20 +3754,21 @@
     <MESSAGE value="Implemented Multi Hue selection problem" />
     <MESSAGE value="Implemented pre-defined list of seeds wrapped in the alert dialog. Need to implement SQLite database for saving user's inputs." />
     <MESSAGE value="Implemented SQLite database for saving user's inputs." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented SQLite database for saving user's inputs." />
+    <MESSAGE value="added a check on the lower and upper bounds of hue ranges, plus comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a check on the lower and upper bounds of hue ranges, plus comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/app/watershed/NewMainDrawerActivity.java</url>
-          <line>942</line>
+          <line>903</line>
           <properties />
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/app/watershed/NewMainDrawerActivity.java</url>
-          <line>894</line>
+          <line>855</line>
           <properties />
           <option name="timeStamp" value="46" />
         </line-breakpoint>
@@ -3515,13 +3778,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/watershed/Fragment_TouchImageView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_camera.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3635,13 +3891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gradle.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3720,13 +3969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_dialog.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3759,7 +4001,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="5" column="41" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3775,7 +4016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3805,7 +4045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="25" column="175" selection-start-line="25" selection-start-column="175" selection-end-line="25" selection-end-column="175" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3857,22 +4096,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yahoo.mobile.client.android.util.rangeseekbar/rangeseekbar-library/0.1.0/a40ad8f0481d2387494025faaf64d20426c394c/rangeseekbar-library-0.1.0-sources.jar!/com/yahoo/mobile/client/android/util/rangeseekbar/RangeSeekBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="333" column="48" selection-start-line="333" selection-start-column="33" selection-end-line="333" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/hue_layout.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="android-designer2">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/app/watershed/NewMainDrawerActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="500" column="30" selection-start-line="500" selection-start-column="30" selection-end-line="500" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="450">
+          <caret line="490" column="0" selection-start-line="490" selection-start-column="0" selection-end-line="490" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

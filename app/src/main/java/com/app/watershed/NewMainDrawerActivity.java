@@ -31,8 +31,8 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.io.File;
+import io.apptik.widget.MultiSlider;
 
 public class NewMainDrawerActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -456,8 +456,8 @@ public class NewMainDrawerActivity extends AppCompatActivity
         final TextView tv2 = (TextView)viewLayout.findViewById(R.id.textView5);
         final TextView tvHueStatus = (TextView)viewLayout.findViewById(R.id.textView10);
 
-        tv1.setText("Starting range value is : " + hueValue1);
-        tv2.setText("Ending range value is : " + hueValue2);
+        tv1.setText("Min : " + hueValue1);
+        tv2.setText("Max : " + hueValue2);
         tvHueStatus.setText("");
 
         if(hueValue1 != 0 && hueValue2 != 0)
@@ -466,68 +466,29 @@ public class NewMainDrawerActivity extends AppCompatActivity
         dialg.setTitle("Select the Hue ranges!");
         // dialg.setView(viewLayout);
         dialg.setView(viewLayout);
-        SeekBar seek1 = (SeekBar)viewLayout.findViewById(R.id.seekBar2);
-        seek1.setMax(180);
-        seek1.setProgress(h1);
-        seek1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
+
+        MultiSlider hueRangeSlider = (MultiSlider)viewLayout.findViewById(R.id.hueRangeSlider);
+
+        hueRangeSlider.setOnThumbValueChangeListener(new MultiSlider.OnThumbValueChangeListener() {
             @Override
-            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                h1 = i;
-                if(h1 > h2) {
-                    tvHueStatus.setText("Starting range cannot be greater than ending range");
-                    tv1.setText("Starting Range value is : "+ h1);
-                    tv2.setText("Ending range value is : " + h2);
+            public void onValueChanged(MultiSlider multiSlider, MultiSlider.Thumb thumb, int thumbIndex, int value) {
+                if (thumbIndex == 0) {
+                    h1 = value;
+                    tv1.setText("Min : " + String.valueOf(value));
+                    tvHueStatus.setText("Selected Hue Range is : " + String.valueOf(h1) + "-" +String.valueOf(h2));
+                } else {
+                    h2 = value;
+                    tv2.setText("Max : " + String.valueOf(value));
+                    tvHueStatus.setText("Selected Hue Range is : " + String.valueOf(h1) + "-" +String.valueOf(h2));
                 }
-                else {
-                    tv1.setText("Starting range value is: " + i);
-                    tv2.setText("Ending range value is : " + h2);
-                    tvHueStatus.setText("");
-                }
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
             }
         });
+        hueRangeSlider.setDrawThumbsApart(true);
+        hueRangeSlider.setStepsThumbsApart(20);
+        hueRangeSlider.setMax(100);
+        hueRangeSlider.setMin(0);
+        hueRangeSlider.setThumbOffset(10);
 
-        SeekBar seek2 = (SeekBar)viewLayout.findViewById(R.id.seekBar3);
-        seek2.setMax(180);
-        seek2.setProgress(h2);
-        seek2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                h2 = i;
-                if(h2 < h1) {
-                    tv1.setText("Starting range value is :" + h1);
-                    tv2.setText("Ending range value is : " +h2);
-                    tvHueStatus.setText("Ending range cannot be less than starting range");
-                }
-                else {
-                    tv1.setText("Starting range value is :" + h1);
-                    tv2.setText("Ending range value is: " + h2);
-                    tvHueStatus.setText("");
-                }
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-
-
-        b.setEnabled(false);
         dialg.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
