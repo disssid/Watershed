@@ -10,6 +10,7 @@ import android.util.Log;
 
 import org.opencv.android.Utils;
 import org.opencv.core.Core;
+import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfPoint;
 import org.opencv.core.Point;
@@ -66,12 +67,14 @@ public class Watershed {
         //Mat imageMat = new Mat();
         //Utils.bitmapToMat(bitmap,imageMat);
         Mat originalImage = Imgcodecs.imread(file.getAbsolutePath());
+        if(originalImage.empty())
+            print("Empty Image");
         //thresh = myThreshold;
         //Bitmap originalBitmap = Bitmap.createBitmap(originalImage.cols(), originalImage.rows(), Bitmap.Config.ARGB_8888);
         //Utils.matToBitmap(originalImage, originalBitmap);
         //print("Mat read");
         Mat image1Mat = new Mat();
-       // Mat image1Mat = new Mat(originalBitmap.getHeight(), originalBitmap.getWidth(), CvType.CV_8UC1);
+        //Mat image1Mat = new Mat(originalBitmap.getHeight(), originalBitmap.getWidth(), CvType.CV_8UC1);
         //Imgproc.cvtColor(image,imageMat, Imgproc.COLOR_BGR2GRAY);
         Imgproc.cvtColor(originalImage,image1Mat, Imgproc.COLOR_BGR2HSV);
         //print("Mat converted to HSV");

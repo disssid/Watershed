@@ -1,5 +1,7 @@
 package com.app.watershed;
 
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -27,8 +29,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.SeekBar;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 import java.io.File;
@@ -40,12 +45,12 @@ public class NewMainDrawerActivity extends AppCompatActivity
     String str;
     double myThreshold;
     double Threshold;
-    int h1;
-    int h2;
-    int mh1;
-    int mh2;
-    int mh3;
-    int mh4;
+    int hueValue1;
+    int hueValue2;
+    int multiHueValue1;
+    int multiHueValue2;
+    int multiHueValue3;
+    int multiHueValue4;
     Uri imageUri;
     ImageView iv;
     TouchImageView myTVF;
@@ -57,6 +62,9 @@ public class NewMainDrawerActivity extends AppCompatActivity
     int numberOfSeeds = 0 ;
     File myFile =null;
     boolean multiHueRange = false;
+    boolean hueRangeInclude = true;
+    int hueValueMin,hueValueMax, multiHueValueMin, multiHueValueMax;
+    CheckBox hueIncludeRange1,hueIncludeRange2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -310,7 +318,6 @@ public class NewMainDrawerActivity extends AppCompatActivity
         return true;
     }
 
-
     public void showDialog(){
         print("called show dialog");
         final AlertDialog.Builder dialg= new AlertDialog.Builder(this);
@@ -318,17 +325,18 @@ public class NewMainDrawerActivity extends AppCompatActivity
         final View viewLayout = inflater.inflate(R.layout.activity_dialog, (ViewGroup)findViewById(R.id.layout_dialog));
         final TextView tv = (TextView)viewLayout.findViewById(R.id.textView);
         dialg.setIcon(android.R.drawable.sym_def_app_icon);
-        dialg.setTitle("Select the Threshold!");
+        dialg.setTitle("Select threshold");
         // dialg.setView(viewLayout);
         dialg.setView(viewLayout);
         SeekBar seek = (SeekBar)viewLayout.findViewById(R.id.seekBar);
         seek.setMax(20);
+        tv.setText("Threshold value : " + 0);
         seek.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 float value = ((float)i / 10.0f);
                 myThreshold = (double)value;
-                tv.setText("Threshold value is: "+ value);
+                tv.setText("Threshold value : "+ value);
             }
 
             @Override
@@ -413,11 +421,11 @@ public class NewMainDrawerActivity extends AppCompatActivity
             Watershed w = new Watershed();
             w.setThresh(Threshold);
             if(multiHueRange){
-                w.setMultipleHue(mh1, mh2, mh3, mh4);
+                w.setMultipleHue(multiHueValue1, multiHueValue2, multiHueValue3, multiHueValue4);
             }
             else
             {
-                    w.setHue(h1, h2);
+                    w.setHue(hueValue1, hueValue2);
             }
             w.checkMultiHue(multiHueRange);
             Bitmap bitmap1 = w.process();
@@ -442,87 +450,159 @@ public class NewMainDrawerActivity extends AppCompatActivity
 
     }
 
+    public void singleOrMultiHueConfirm(final int singleOrMultiHue1, final int singleOrMultiHue2){
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Multiple Hue ranges selected, the process will change from Single to Multi Hue, Do you want to continue?")
+                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        multiHueRange = true;
+                        dialog.dismiss();
+                        multiHueDialog(singleOrMultiHue1,singleOrMultiHue2);
+                    }
+                })
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.dismiss();
+                        hueDialog(singleOrMultiHue1,singleOrMultiHue2);
+                    }
+                });
+        builder.create();
+        builder.show();
+    }
+
     //Functionality - Dialog for user input to select a single Hue range
     //Description :
-    //  The dialog shows two seek bars for the user to select a hue range
-    //      1. The first seek bar is the starting range and ranges between 0-180
-    //      2. The second seek bar is the ending range, it should be greater than the starting range and ranges between 0-180
+    //  The dialog shows a range seek bar for the user to select a hue range
+    //  The min value is 0 and the max is 255
 
-    public void hueDialog(int hueValue1, int hueValue2){
-        final AlertDialog.Builder dialg= new AlertDialog.Builder(this);
-        final LayoutInflater inflater = (LayoutInflater)this.getSystemService(LAYOUT_INFLATER_SERVICE);
-        final View viewLayout = inflater.inflate(R.layout.hue_layout, (ViewGroup)findViewById(R.id.hue_dialog));
-        final TextView tv1 = (TextView)viewLayout.findViewById(R.id.textView4);
-        final TextView tv2 = (TextView)viewLayout.findViewById(R.id.textView5);
-        final TextView tvHueStatus = (TextView)viewLayout.findViewById(R.id.textView10);
+    public void hueDialog(int singleHue1, int singleHue2) {
+        final AlertDialog.Builder dialg = new AlertDialog.Builder(this);
+        final LayoutInflater inflater = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
+        final View viewLayout = inflater.inflate(R.layout.hue_layout, (ViewGroup) findViewById(R.id.hue_dialog));
+        final TextView tvHueMin = (TextView) viewLayout.findViewById(R.id.textView4);
+        final TextView tvHueMax = (TextView) viewLayout.findViewById(R.id.textView5);
+        final TextView tvHueStatus = (TextView) viewLayout.findViewById(R.id.textView10);
+        final MultiSlider hueRangeSlider = (MultiSlider) viewLayout.findViewById(R.id.hueRangeSlider);
+        final Switch hueRangeSwitch = (Switch) viewLayout.findViewById(R.id.hueRangeSwitch);
+        final TextView tvhueIncludeRanges = (TextView) viewLayout.findViewById(R.id.hueIncludeRanges);
+        hueIncludeRange1 = (CheckBox) viewLayout.findViewById(R.id.hueIncludeRange1);
+        hueIncludeRange2 = (CheckBox) viewLayout.findViewById(R.id.hueIncludeRange2);
 
-        tv1.setText("Min : " + hueValue1);
-        tv2.setText("Max : " + hueValue2);
-        tvHueStatus.setText("");
-
-        if(hueValue1 != 0 && hueValue2 != 0)
-            tvHueStatus.setText("Starting hue range cannot be greater than ending rang");
         //dialg.setIcon(android.R.drawable.sym_def_app_icon);
-        dialg.setTitle("Select the Hue ranges!");
-        // dialg.setView(viewLayout);
+        dialg.setTitle("Hue filter range");
         dialg.setView(viewLayout);
 
-        MultiSlider hueRangeSlider = (MultiSlider)viewLayout.findViewById(R.id.hueRangeSlider);
+        //set the initial settings for the multi range slider for hue values
+        hueRangeSlider.setDrawThumbsApart(true);
+        hueRangeSlider.setStepsThumbsApart(20);
+        hueRangeSlider.setMin(0);
+        hueRangeSlider.setMax(255);
+        hueRangeSlider.repositionThumbs();
 
+        hueValueMin = hueRangeSlider.getMin();
+        hueValueMax = hueRangeSlider.getMax();
+        if (singleHue1 != 0 && singleHue2 != 255){
+            hueValue1 = singleHue1;
+            hueValue2 = singleHue2;
+            hueRangeSlider.clearThumbs();
+            hueRangeSlider.addThumb(hueValue1);
+            hueRangeSlider.addThumb(hueValue2);
+        }
+        else {
+            hueValue1 = hueValueMin;
+            hueValue2 = hueValueMax;
+        }
+        //create a value change listener for the multi range slider for hue values
         hueRangeSlider.setOnThumbValueChangeListener(new MultiSlider.OnThumbValueChangeListener() {
             @Override
             public void onValueChanged(MultiSlider multiSlider, MultiSlider.Thumb thumb, int thumbIndex, int value) {
                 if (thumbIndex == 0) {
-                    h1 = value;
-                    tv1.setText("Min : " + String.valueOf(value));
-                    tvHueStatus.setText("Selected Hue Range is : " + String.valueOf(h1) + "-" +String.valueOf(h2));
+                    hueValue1 = value;
+                    //tv1.setText("Min : " + String.valueOf(value));
+                    tvHueStatus.setText("Selected Hue Range is : " + String.valueOf(hueValue1) + "-" +String.valueOf(hueValue2));
+                    updateHueDialogTextViews();
                 } else {
-                    h2 = value;
-                    tv2.setText("Max : " + String.valueOf(value));
-                    tvHueStatus.setText("Selected Hue Range is : " + String.valueOf(h1) + "-" +String.valueOf(h2));
+                    hueValue2 = value;
+                    //tv2.setText("Max : " + String.valueOf(value));
+                    tvHueStatus.setText("Selected Hue Range is : " + String.valueOf(hueValue1) + "-" +String.valueOf(hueValue2));
+                    updateHueDialogTextViews();
                 }
             }
         });
-        hueRangeSlider.setDrawThumbsApart(true);
-        hueRangeSlider.setStepsThumbsApart(20);
-        hueRangeSlider.setMax(100);
-        hueRangeSlider.setMin(0);
-        hueRangeSlider.setThumbOffset(10);
+
+        //update the text views with the min, max and selected range of hue values
+        tvHueMin.setText("Min : " + hueValueMin);
+        tvHueMax.setText("Max : " + hueValueMax);
+        tvHueStatus.setText("Selected Hue Range is : " + String.valueOf(hueValue1) + "-" +String.valueOf(hueValue2));
+
+        hueRangeSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked) {
+                    hueRangeInclude = false;
+                    tvhueIncludeRanges.setText("Select the range(s) to include");
+                    updateHueDialogTextViews();
+                    tvhueIncludeRanges.setVisibility(View.VISIBLE);
+                    hueIncludeRange1.setVisibility(View.VISIBLE);
+                    hueIncludeRange2.setVisibility(View.VISIBLE);
+                    hueIncludeRange1.setChecked(true);
+                    hueIncludeRange2.setChecked(true);
+                }
+                else {
+                    hueRangeInclude = true;
+                    tvhueIncludeRanges.setVisibility(View.GONE);
+                    hueIncludeRange1.setVisibility(View.GONE);
+                    hueIncludeRange2.setVisibility(View.GONE);
+                    hueIncludeRange1.setChecked(false);
+                    hueIncludeRange2.setChecked(false);
+                }
+            }
+        });
 
         dialg.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                if(h1 > h2) {
-                    dialogInterface.dismiss();
-                    hueDialog(h1, h2);
+                if(!hueRangeInclude){
+                    if(hueIncludeRange1.isChecked() && hueIncludeRange2.isChecked()){
+                        dialogInterface.cancel();
+                        singleOrMultiHueConfirm(hueValue1,hueValue2);
+                        dialogInterface.dismiss();
+                    }
                 }
                 else{
+                    if(hueIncludeRange1.isChecked()){
+                        hueValue2 = checkHueMinValue(hueValue1);
+                        hueValue1 = hueValueMin;
+                        multiHueRange = false;
+                    }
+                    else if(hueIncludeRange2.isChecked()){
+                        hueValue1 = checkHueMaxValue(hueValue2);
+                        hueValue2 = hueValueMax;
+                        multiHueRange = false;
+                    }
                     String name = "";
-                    if ((h1 == 0) && (h2 == 50)) {
+                    if ((hueValue1 == 0) && (hueValue2 == 50)) {
                         name = "Wheat";
                     } else {
-                        name = "Default";
+                        name = "User HueRange : ";
                     }
                     dialogInterface.cancel();
-                    String hueString = h1 + "," + h2;
+                    String hueString = hueValue1 + "," + hueValue2;
                     print("name is " + name + " and hue is " + hueString);
                     myDB.insertData(name, hueString);
-                    toast("Selected range is: " + h1 + " to " + h2);
-                    multiHueRange = false;
+                    toast("Selected range is: " + hueValue1 + " to " + hueValue2);
                     showDialog();
                     dialogInterface.dismiss();
                 }
-            }
-        });
+        }});
 
         dialg.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                h1 = 0;
-                h2 = 50;
+                hueValue1 = 0;
+                hueValue2 = 50;
                 multiHueRange = false;
                 showDialog();
-                toast("Default Hue range is: "+h1+" to "+h2);
+                toast("Default Hue range is: "+hueValue1+" to "+hueValue2);
                 dialogInterface.dismiss();
             }
         });
@@ -561,119 +641,154 @@ public class NewMainDrawerActivity extends AppCompatActivity
         dialg.show();
     }
 
-    public void multiHueDialog(){
+    //Functionality - update the text view in Hue Dialog
+    //Description :
+    //  this function is called to update the text views in the hue dialog whenever there's a change in range seek bar or the include/exclude switch is toggled
+
+    public void updateHueDialogTextViews(){
+        if (hueValue1 == 0)
+            hueIncludeRange1.setText(hueValueMin + " - " + hueValue2);
+        else
+            hueIncludeRange1.setText(hueValueMin +" - " + (hueValue1-1));
+        if(hueValue2 == 255)
+            hueIncludeRange2.setText(hueValue1 +" - " + hueValueMax);
+        else
+            hueIncludeRange2.setText((hueValue2+1) +" - " + hueValueMax);
+    }
+
+    public int checkHueMinValue(int hueValue){
+        if(hueValue == 0)
+            return 0;
+        else
+            return hueValue-1;
+    }
+
+    public int checkHueMaxValue(int hueValue){
+        if(hueValue == 255)
+            return 255;
+        else
+            return hueValue+1;
+    }
+
+    public void multiHueDialog(int multiHue1, int multiHue2){
         final AlertDialog.Builder dialg= new AlertDialog.Builder(this);
         final LayoutInflater inflater = (LayoutInflater)this.getSystemService(LAYOUT_INFLATER_SERVICE);
         final View viewLayout = inflater.inflate(R.layout.multiplehue_dialog, (ViewGroup)findViewById(R.id.multiplehue_layoutdialog));
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(), "AllerDisplay.ttf");
-        final TextView tv1 = (TextView)viewLayout.findViewById(R.id.textView7);
-        final TextView tv2 = (TextView)viewLayout.findViewById(R.id.textView9);
+        final TextView tvHueMin1 = (TextView) viewLayout.findViewById(R.id.multiHueMin1);
+        final TextView tvHueMax1 = (TextView) viewLayout.findViewById(R.id.multiHueMax1);
+        final TextView tvHueMin2 = (TextView) viewLayout.findViewById(R.id.multiHueMin2);
+        final TextView tvHueMax2 = (TextView) viewLayout.findViewById(R.id.multiHueMax2);
+
+        final TextView tvHueStatus1 = (TextView) viewLayout.findViewById(R.id.multiHueStatus1);
+        final TextView tvHueStatus2 = (TextView) viewLayout.findViewById(R.id.multiHueStatus2);
+
+        final MultiSlider hueRangeSlider1 = (MultiSlider) viewLayout.findViewById(R.id.hueRangeSlider1);
+        final MultiSlider hueRangeSlider2 = (MultiSlider) viewLayout.findViewById(R.id.hueRangeSlider2);
+
+        final Switch hueRangeSwitch = (Switch) viewLayout.findViewById(R.id.hueRangeSwitch);
+        final TextView tvhueIncludeRanges = (TextView) viewLayout.findViewById(R.id.hueIncludeRanges);
+        hueIncludeRange1 = (CheckBox) viewLayout.findViewById(R.id.hueIncludeRange1);
+        hueIncludeRange2 = (CheckBox) viewLayout.findViewById(R.id.hueIncludeRange2);
+
+        multiHueValue1=0;
+        multiHueValue2=0;
+        multiHueValue3=0;
+        multiHueValue4=0;
+
         //dialg.setIcon(android.R.drawable.sym_def_app_icon);
-        dialg.setTitle("Select the Hue ranges!");
-        // dialg.setView(viewLayout);
+        dialg.setTitle("Hue filter multi range");
         dialg.setView(viewLayout);
-        SeekBar seek1 = (SeekBar)viewLayout.findViewById(R.id.seekBar4);
-        seek1.setMax(180);
-        mh1=0;
-        mh2=0;
-        mh3=0;
-        mh4=0;
 
-        seek1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
+        //set the initial settings for the multi range slider for hue values
+        hueRangeSlider1.setDrawThumbsApart(true);
+        hueRangeSlider1.setStepsThumbsApart(10);
+        hueRangeSlider1.setMin(0);
+        hueRangeSlider1.setMax(255);
+        hueRangeSlider1.repositionThumbs();
+        hueRangeSlider2.setDrawThumbsApart(true);
+        hueRangeSlider2.setStepsThumbsApart(10);
+        hueRangeSlider2.setMin(0);
+        hueRangeSlider2.setMax(255);
+        hueRangeSlider2.repositionThumbs();
+
+        multiHueValueMin = hueRangeSlider1.getMin();
+        multiHueValueMax = hueRangeSlider1.getMax();
+        if (multiHue1 != 0 && multiHue2 != 255){
+            multiHueValue1 = multiHueValueMin;
+            multiHueValue2 = checkHueMinValue(multiHue1);
+            multiHueValue3 = checkHueMaxValue(multiHue2);
+            multiHueValue4 = multiHueValueMax;
+            hueRangeSlider1.clearThumbs();
+            hueRangeSlider1.addThumb(multiHueValue1);
+            hueRangeSlider1.addThumb(multiHueValue2);
+            tvHueStatus1.setText("Selected Hue Range is : " + String.valueOf(multiHueValue1) + "-" +String.valueOf(multiHueValue2));
+            hueRangeSlider2.clearThumbs();
+            hueRangeSlider2.addThumb(multiHueValue3);
+            hueRangeSlider2.addThumb(multiHueValue4);
+            tvHueStatus2.setText("Selected Hue Range 2 is : " + String.valueOf(multiHueValue3) + "-" +String.valueOf(multiHueValue4));
+        }
+        else {
+            multiHueValue1 = multiHueValueMin;
+            multiHueValue2 = multiHueValueMax;
+            multiHueValue3 = multiHueValueMin;
+            multiHueValue4 = multiHueValueMax;
+        }
+        //create a value change listener for the multi range slider for hue values
+        hueRangeSlider1.setOnThumbValueChangeListener(new MultiSlider.OnThumbValueChangeListener() {
             @Override
-            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                mh1 = i;
-                tv1.setText("Range1 is from "+ mh1+" to "+ mh2);
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-
-        SeekBar seek2 = (SeekBar)viewLayout.findViewById(R.id.seekBar5);
-        seek2.setMax(180);
-        seek2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                mh2 = i;
-                tv1.setText("Range1 is from "+ mh1 +" to "+ mh2);
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-
-        SeekBar seek3 = (SeekBar)viewLayout.findViewById(R.id.seekBar6);
-        seek3.setMax(180);
-
-        seek3.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                mh3 = i;
-                tv2.setText("Range2 is from "+ mh3 +" to "+ mh4);
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
+            public void onValueChanged(MultiSlider multiSlider, MultiSlider.Thumb thumb, int thumbIndex, int value) {
+                if (thumbIndex == 0) {
+                    multiHueValue1 = value;
+                    //tv1.setText("Min : " + String.valueOf(value));
+                    tvHueStatus1.setText("Selected Hue Range is : " + String.valueOf(multiHueValue1) + "-" +String.valueOf(multiHueValue2));
+                    //updateHueDialogTextViews();
+                } else {
+                    multiHueValue2 = value;
+                    //tv2.setText("Max : " + String.valueOf(value));
+                    tvHueStatus1.setText("Selected Hue Range is : " + String.valueOf(multiHueValue1) + "-" +String.valueOf(multiHueValue2));
+                    //updateHueDialogTextViews();
+                }
             }
         });
 
-        SeekBar seek4 = (SeekBar)viewLayout.findViewById(R.id.seekBar7);
-        seek4.setMax(180);
-
-        seek4.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener(){
+        hueRangeSlider2.setOnThumbValueChangeListener(new MultiSlider.OnThumbValueChangeListener() {
             @Override
-            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                mh4 = i;
-                tv2.setText("Range2 is from "+ mh3 +" to "+ mh4);
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
+            public void onValueChanged(MultiSlider multiSlider, MultiSlider.Thumb thumb, int thumbIndex, int value) {
+                if (thumbIndex == 0) {
+                    multiHueValue3 = value;
+                    //tv2.setText("Max : " + String.valueOf(value));
+                    tvHueStatus2.setText("Selected Hue Range is : " + String.valueOf(multiHueValue3) + "-" + String.valueOf(multiHueValue4));
+                    //updateHueDialogTextViews();
+                } else {
+                    multiHueValue4 = value;
+                    //tv2.setText("Max : " + String.valueOf(value));
+                    tvHueStatus2.setText("Selected Hue Range is : " + String.valueOf(multiHueValue3) + "-" + String.valueOf(multiHueValue4));
+                    //updateHueDialogTextViews();
+                }
             }
         });
-
-
+        //update the text views with the min, max and selected range of hue values
+        tvHueMin1.setText("Min : " + multiHueValueMin);
+        tvHueMax1.setText("Max : " + multiHueValueMax);
+        tvHueStatus1.setText("Selected Hue Range 1 is : " + String.valueOf(multiHueValue1) + "-" +String.valueOf(multiHueValue2));
+        tvHueMin2.setText("Min : " + multiHueValueMin);
+        tvHueMax2.setText("Max : " + multiHueValueMax);
+        tvHueStatus2.setText("Selected Hue Range 2 is : " + String.valueOf(multiHueValue3) + "-" +String.valueOf(multiHueValue4));
 
         dialg.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 String name = "";
-                if((mh1==0) && (mh2==75) && (mh3==177) && (mh4==255)){
+                if((multiHueValue1==0) && (multiHueValue2==75) && (multiHueValue3==177) && (multiHueValue4==255)){
                     name = "Canola";
                 }
                 else{
                     name = "Default";
                 }
-                String hueString = mh1+","+mh2+","+mh3+","+mh4;
+                String hueString = multiHueValue1+","+multiHueValue2+","+multiHueValue3+","+multiHueValue4;
                 myDB.insertData(name, hueString);
-                toast("Selected ranges are: "+mh1+" to "+mh2+" and from "+mh3+" to "+mh4);
+                toast("Selected ranges are: "+multiHueValue1+" to "+multiHueValue2+" and from "+multiHueValue3+" to "+multiHueValue4);
                 multiHueRange = true;
                 showDialog();
                 dialogInterface.dismiss();
@@ -683,11 +798,11 @@ public class NewMainDrawerActivity extends AppCompatActivity
         dialg.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                h1 = 0;
-                h2 = 50;
+                hueValue1 = 0;
+                hueValue2 = 50;
                 multiHueRange = false;
                 showDialog();
-                toast("Default Hue range is: "+h1+" to "+h2);
+                toast("Default Hue range is: "+hueValue1+" to "+hueValue2);
                 dialogInterface.dismiss();
             }
         });
@@ -754,40 +869,40 @@ public class NewMainDrawerActivity extends AppCompatActivity
                 switch (i){
                     case 0:
                         str = (String)items[i];
-                        h1 = 0;
-                        h2 = 50;
+                        hueValue1 = 0;
+                        hueValue2 = 50;
                         multiHueRange = false;
                         break;
                     case 1:
                         str = (String)items[i];
-                        mh1 = 0;
-                        mh2 = 50;
-                        mh3 = 177;
-                        mh4 = 255;
+                        multiHueValue1 = 0;
+                        multiHueValue2 = 50;
+                        multiHueValue3 = 177;
+                        multiHueValue4 = 255;
                         multiHueRange = true;
                         break;
                     case 2:
                         str = (String)items[i];
-                        h1 = 0;
-                        h2 = 50;
+                        hueValue1 = 0;
+                        hueValue2 = 50;
                         multiHueRange = false;
                         break;
                     case 3:
                         str = (String)items[i];
-                        h1 = 0;
-                        h2 = 50;
+                        hueValue1 = 0;
+                        hueValue2 = 50;
                         multiHueRange = false;
                         break;
                     case 4:
                         str = (String)items[i];
-                        h1 = 0;
-                        h2 = 50;
+                        hueValue1 = 0;
+                        hueValue2 = 50;
                         multiHueRange = false;
                         break;
                     default:
                         str = (String)items[i];
-                        h1 = 0;
-                        h2 = 50;
+                        hueValue1 = 0;
+                        hueValue2 = 50;
                         multiHueRange = false;
                         break;
                 }
@@ -827,14 +942,14 @@ public class NewMainDrawerActivity extends AppCompatActivity
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        multiHueDialog();
+                        multiHueDialog(0,255);
                         b.setVisibility(View.VISIBLE);
                     }
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                       hueDialog(0,0);
+                        hueDialog(0,255);
                         dialogInterface.cancel();
                     }
                 })
